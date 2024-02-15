@@ -1,0 +1,27 @@
+/*----------------------------------------------------------------------------*-
+ * This top chunk of the file undoes some of the browser's default styles to
+ * ensure that all of the margin and padding you see are the ones you wrote.
+ *
+ *         ============================================================
+ *              You don't need to change anything in this section!
+ *           Start your work for the lab down after the next comment.
+ *         ============================================================
+-*----------------------------------------------------------------------------*/
+
+:root {
+    font-family: system-ui, sans-serif;
+}
+
+p,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------*-
+ * Put all of your code for the lab after this comment.
+-*----------------------------------------------------------------------------*/

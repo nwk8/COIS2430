@@ -1,0 +1,76 @@
+:root {
+  margin: 1em;
+}
+p {
+  font-size: 1.2em;
+  max-width: 40em;
+}
+code {
+  color: rebeccapurple;
+}
+/* Some default styles to make each item visible */
+.item {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  font-family: monospace;
+  border-radius: 0.5em;
+}
+
+/* define the container that holds each grid */
+.container {
+  background-color: thistle;
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 40em;
+}
+
+/* basic styling for all containers */
+
+.grid {
+  /* width: 20em;
+  height: 25em; */
+  /* border: 0.3em solid black; */
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+#parth {
+  min-height: 40em;
+}
+
+/* Colours for each item */
+.item1 {
+  background: #e74c3c;
+  /* background: #1abc9c; */
+}
+.item2 {
+  background: #f1c40f;
+}
+.item3 {
+  background: #e67e22;
+}
+.item4 {
+  background: #16a085;
+  /* background: #34495e; */
+}
+.item5 {
+  background: #9b59b6;
+}
+.itema,
+.itemb,
+.itemc,
+.itemd,
+.iteme,
+.itemf,
+.itemg,
+.itemh,
+.itemi,
+.itemj {
+  background: #3498db;
+}
+.item6 {
+  background: #34495e;
+}

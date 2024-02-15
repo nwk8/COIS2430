@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab 5 : COIS 2430</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1>Practicing Grid</h1>
+
+    <section>
+      <h2>Creating a Simple Grid</h2>
+      <p>
+        Properties: <code>display</code>, <code>grid-template-columns</code>,
+        <code>gap</code>.
+      </p>
+      <p>Function: <code>repeat</code>.</p>
+
+      <div class="container">
+        <div class="grid" id="parta">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item itema">A</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Different Column Sizes</h2>
+      <p>New Properties: <code>grid-template-columns</code>.</p>
+
+      <div class="container">
+        <div class="grid" id="partb">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item itemb">B</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Line Based Placement</h2>
+      <p>
+        New Properties: <code>grid-column-start</code>,
+        <code>grid-column-end</code
+        >,<code>grid-row-start</code>,<code>grid-row-end</code>,
+        <code>grid-column</code>, <code>grid-row</code>.
+      </p>
+
+      <div class="container">
+        <div class="grid" id="partc">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item itemc">C</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Spanning with Line Numbers (using ending line)</h2>
+      <p>
+        New Properties: <code>grid-column-start</code>,
+        <code>grid-column-end</code>,<code>grid-row-start</code>,<code
+          >grid-row-end</code
+        >
+        <strong>OR</strong>
+        <code>grid-column</code>, <code>grid-row</code>.
+      </p>
+
+      <div class="container">
+        <div class="grid" id="partd">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item itemd">D</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Spanning with Line Numbers (using span)</h2>
+      <p>
+        New Properties: <code>grid-column-start</code>,
+        <code>grid-column-end</code>,<code>grid-row-start</code>,<code
+          >grid-row-end</code
+        >
+        <strong>OR</strong>
+        <code>grid-column</code>, <code>grid-row</code>.
+      </p>
+      <p>Keyword: <code>span</code>.</p>
+
+      <div class="container">
+        <div class="grid" id="parte">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item iteme">E</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Fixed Size Rows</h2>
+      <p>New Properties: <code>grid-auto-rows</code></p>
+
+      <div class="container">
+        <div class="grid" id="partf">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item itemf">F</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Horizontally and Vertically Aligned Content</h2>
+      <p>
+        New Properties: <code>justify-items</code>, <code>align-items</code>
+      </p>
+
+      <div class="container">
+        <div class="grid" id="partg">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item itemg">G</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Slightly More Complex Positions and Aligning the Grid</h2>
+      <p>
+        New Properties: <code>grid-template-rows</code>,
+        <code>justify-content</code>, <code>align-content</code>
+      </p>
+
+      <div class="container">
+        <div class="grid" id="parth">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item itemh">H</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nested Grids</h2>
+      <p>New Properties: nothing we haven't used before</p>
+
+      <div class="container">
+        <div class="grid" id="parti">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+            <div class="item itemh">I</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Grid Template Areas</h2>
+      <p>
+        New Properties: <code>grid-template-area</code>,
+        <code>grid-area</code>
+      </p>
+
+      <div class="container">
+        <div class="grid" id="partj">
+          <div class="item item1">1. Logo</div>
+          <div class="item item2">2. Header</div>
+          <div class="item item3">3. Nav</div>
+          <div class="item item4">
+            4. Content
+            <p>
+              There is more content here to see what happens when it's taller
+            </p>
+          </div>
+          <div class="item item5">5. Sidebar</div>
+          <div class="item itemj">J. Footer</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

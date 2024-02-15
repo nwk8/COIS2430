@@ -1,0 +1,63 @@
+/* Some default styles to make each item visible */
+.item {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  font-family: monospace;
+}
+
+/* basic flex wrap for each property to display better at different
+screen sizes */
+.property {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* basic styling for all containers */
+
+.container {
+  width: 20em;
+  height: 25em;
+  border: 0.2em solid black;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+/* change the size for items in the wrap question to make it easier to wrap */
+#wrap .item {
+  width: 3em;
+  flex-shrink: 0;
+}
+
+/* change the size of the container for the flex questions */
+.flex .container {
+  width: 100%;
+  height: 5em;
+}
+
+/* Colours for each item */
+.item1 {
+  background: #e74c3c;
+  /* background: #1abc9c; */
+}
+.item2 {
+  background: #f1c40f;
+}
+.item3 {
+  background: #e67e22;
+}
+.item4 {
+  background: #16a085;
+  /* background: #34495e; */
+}
+.item5 {
+  background: #9b59b6;
+}
+.item6 {
+  background: #3498db;
+}
+.item7 {
+  background: #34495e;
+}

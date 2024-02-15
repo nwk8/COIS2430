@@ -1,0 +1,75 @@
+@import url("base.css");
+
+/************************************
+Properties for every question
+**************************************/
+.grid {
+}
+
+/************************************
+A simple grid with equally spaced columns
+**************************************/
+
+#parta.grid {
+}
+
+/************************************
+Different Column Sizes
+**************************************/
+#partb.grid {
+}
+/************************************
+Positing with Line Numbers
+**************************************/
+#partc.grid {
+}
+
+/* write necessary item selectors here */
+
+/************************************
+Spanning with Line Numbers and ending lines
+**************************************/
+#partd.grid {
+}
+/* write necessary item selectors here */
+/************************************
+Spanning with the span keyword
+**************************************/
+#parte.grid {
+}
+
+/* write necessary item selectors here */
+
+/************************************
+Larger rows
+**************************************/
+#partf.grid {
+}
+
+/************************************
+Aligned content in grid cells
+**************************************/
+#partg.grid {
+}
+/************************************
+More Complex Layout, Aligning the Grid
+**************************************/
+#parth.grid {
+}
+
+/* write necessary item selectors here */
+
+/************************************
+Nested Grids
+**************************************/
+#parti.grid {
+}
+
+/* write necessary item selectors here */
+
+/************************************
+Grid Content Areas
+**************************************/
+#partj.grid {
+}
+/* write necessary item selectors here */

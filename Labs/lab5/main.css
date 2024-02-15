@@ -1,0 +1,173 @@
+@import url("base.css");
+
+/************************************
+Properties for every question
+**************************************/
+.grid {
+    display: grid;
+    gap: 1em;
+}
+
+/************************************
+A simple grid with equally spaced columns
+**************************************/
+
+#parta.grid {
+    
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+
+/************************************
+Different Column Sizes
+**************************************/
+#partb.grid {
+    grid-template-columns: 1fr 3fr 1fr;
+}
+/************************************
+Positing with Line Numbers
+**************************************/
+#partc.grid {
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+/* write necessary item selectors here */
+#partc .itemc{
+    grid-row: 1;
+}
+#partc .item5{
+    grid-column: 2;
+    grid-row: 2;
+}
+#partc .item4{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/************************************
+Spanning with Line Numbers and ending lines
+**************************************/
+#partd.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+/* write necessary item selectors here */
+
+
+#partd .itemd{
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+#partd .item1{
+    grid-column: 1 / 3;
+}
+/************************************
+Spanning with the span keyword
+**************************************/
+
+#parte.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* write necessary item selectors here */
+#parte .iteme{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+#parte .item1{
+    grid-column: 1 / span 2;
+}
+/************************************
+Larger rows
+**************************************/
+#partf.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+}
+
+/************************************
+Aligned content in grid cells
+**************************************/
+#partg.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    
+    
+    
+
+}
+
+#partg .item{
+    width: 50px;
+    justify-self: flex-end;
+    align-self: center;
+}
+/************************************
+More Complex Layout, Aligning the Grid
+**************************************/
+#parth.grid {
+    grid-template-columns: repeat(3, 6em);
+    grid-template-rows: repeat(3, 8em);
+    justify-content: center;
+    align-content: center;
+    
+}
+
+/* write necessary item selectors here */
+#parth .item1{
+    grid-column: 1/4;
+}
+#parth .item3{
+    
+    grid-column: 2/4;
+}
+#parth .item2{
+    grid-row: 2/4;
+}
+/************************************
+Nested Grids
+**************************************/
+#parti.grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 1fr;
+}
+
+/* write necessary item selectors here */
+#parti .item4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#parti .item5{
+    
+    grid-column: 1 / 3;
+    
+}
+
+
+
+/************************************
+Grid Content Areas
+**************************************/
+#partj.grid {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "Logo Header Header"
+                          "Nav Content Sidebar"
+                          "Footer Footer Footer";
+    
+}
+/* write necessary item selectors here */
+#partj .item1{
+    grid-area: Logo;
+}
+#partj .item2{
+    grid-area: Header;
+}
+#partj .itemj{
+    grid-area: Footer;
+}
+
+
+

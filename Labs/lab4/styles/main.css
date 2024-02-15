@@ -1,0 +1,142 @@
+@import url("base.css");
+
+/************************************
+Container properties for every question
+**************************************/
+.container {
+}
+
+/************************************
+Properties for Direction Section
+**************************************/
+
+#parta.container {
+}
+
+#partb.container {
+}
+
+#partc.container {
+}
+
+/************************************
+Properties for Main Axis Alignment
+**************************************/
+
+#partd.container {
+}
+
+#parte.container {
+}
+
+#partf.container {
+}
+
+#partg.container {
+}
+
+#parth.container {
+}
+
+#parti.container {
+}
+
+/************************************
+Properties for Cross Axis Alignment
+**************************************/
+
+#partj.container {
+}
+
+#partk.container {
+}
+
+#partl.container {
+}
+
+#partm.container {
+}
+
+/************************************
+Properties for Wrapping
+**************************************/
+
+#partn.container {
+}
+
+#parto.container {
+}
+
+/************************************
+Properties for Aligning Individual Items
+**************************************/
+
+/********/
+/*Part P*/
+/********/
+#partp.container {
+}
+#partp.container .item1 {
+}
+
+#partp.container .item3 {
+}
+
+#partp.container .item5 {
+}
+
+/********/
+/*Part Q*/
+/********/
+
+#partq.container {
+}
+
+#partq.container .item2 {
+}
+
+#partq.container .item4 {
+}
+
+/************************************
+Properties for flex-sizing (just growing)
+**************************************/
+
+/********/
+/*Part R*/
+/********/
+#partr.container {
+  align-items: flex-start;
+}
+
+#partr.container .item2 {
+}
+
+#partr.container .item5 {
+}
+
+/************************************
+Properties for flex-sizing (including basis and shrink)
+**************************************/
+#flex2 .container {
+  align-items: flex-start;
+}
+
+#parts.container .item {
+  flex: 0 0 15em;
+}
+
+#partt.container .item {
+  flex: 1 1 15em;
+}
+
+#partu.container .item {
+  flex: 1 1 auto;
+}
+
+#partv.container .item4 {
+  flex: 4 1 15em;
+}
+#partv.container .item5 {
+  flex: 1 5 15em;
+}
