@@ -1,0 +1,20 @@
+/*
+ * Light Lavender:     #CECDDF
+ * Purple:             #7E5991
+ * Dark Forest Green:  #507345
+ * Dark Grey:          #576875
+ * Robin's Egg Blue:   #66CED6
+ */
+
+body {
+  background-color: #cecddf55;
+}
+
+h1 {
+  color: #7e5991;
+}
+
+h2,
+h3 {
+  color: #507345
+}
