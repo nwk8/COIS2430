@@ -1,0 +1,56 @@
+/*
+ * https://coolors.co/f2efea-fc7753-66d7d1-403d58-dbd56e
+ *
+ * #F2EFEA - Isabelline
+ * #FC7753 - Coral
+ * #66D7D1 - Tiffany Blue
+ * #403D58 - English Violet
+ * #DBD56E - Straw
+ */
+
+:root {
+    font-family: sans-serif;
+    background-color: #F2EFEA;
+    color: black;
+}
+
+body {
+    max-width: 90ch;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-shadow: 0.02em 0.04em #403D58;
+    color: #FC7753;
+}
+
+h2 {
+    border-bottom: 0.1em solid #66D7D1;
+    padding: 0.25em;
+    margin: 1.6em 0;
+}
+
+section p {
+    text-indent: 2.8em;
+}
+
+.project {
+    background-color: #403D58;
+    color: #F2EFEA;
+    padding: 0.5em 2em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+}
+
+.project h3 {
+    color: #DBD563;
+    margin-top: 1rem;
+}
