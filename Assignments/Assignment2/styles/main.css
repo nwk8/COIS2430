@@ -1,0 +1,9 @@
+p * { 
+    color: rebeccapurple;
+    font-size: large;
+ }
+
+ p.term {
+    color: midnightblue;
+    font-size: large;
+ }
