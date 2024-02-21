@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+nav a:link 
+{
+color: #ccff66;;
+}
+nav a:visited {
+color: #ff6666;
+}
+nav a:hover {
+    color: pink;
+}
+a:link 
+{
+color: blue;
+}
+a:visited {
+color: dodgerblue;
+}
+a:hover {
+   color: darkblue;
+}
+
