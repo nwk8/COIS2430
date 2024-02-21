@@ -1,3 +1,7 @@
+* {
+
+   font-size: larger;
+}
 p * { 
     color: rebeccapurple;
     font-size: large;
