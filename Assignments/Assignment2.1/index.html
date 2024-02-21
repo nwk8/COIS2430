@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+
+    <title>Progressive Enhancement</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/CSlogo-small.png" alt="Trent Computer Science" />
+      <nav>
+        <a href="https://www.trentu.ca">Trent University</a>
+        <a href="#for-further-reading">For Further Reading</a>
+        <a href="https://developer.mozilla.org/en-US/docs"
+          >Mozilla Web Documentation</a
+        >
+        <a href="#stratagies">Strategies</a>
+      </nav>
+    </header>
+
+    <h1 id="progressive-enhancement">Progressive Enhancement</h1>
+
+    <p>
+      With a multitude of browsers comes a multitude of levels of support for
+      the web standards. In fact, no browser has implemented all the standards
+      100%, and there are always new technologies that are slowly gaining steam.
+      Furthermore, users can set their own browser preferences, so they may have
+      a browser that supports JavaScript but have chosen to turn it off. The
+      point here is that we are faced with a wide range of browser
+      capabilities—from only basic HTML support to all the bells and whistles.
+    </p>
+
+    <p>
+      <span class="term">Progressive enhancement</span> is one strategy for
+      dealing with unknown browser capabilities (see <strong>Note</strong>).
+      When designing with progressive enhancement, you start with a baseline
+      experience that makes the content or core functionality available to even
+      the most rudimentary browsers or assistive devices. From there, you layer
+      on more advanced features for the browsers that can handle them. You might
+      finish with some “nice to have” effects, like animation or wrapping text
+      around images in interesting shapes, that enhance the experience for users
+      with the most advanced browsers, but aren't really critical to the brand
+      or message.
+    </p>
+
+    <section id="strategies">
+      <h2>Strategies</h2>
+
+      <p>
+        <span class="term">Progressive enhancement</span> is an approach that
+        informs all aspects of page design and production, including HTML, CSS,
+        and JavaScript:
+      </p>
+
+      <dl>
+        <dt>Authoring strategy</dt>
+        <dd>
+          When an HTML document is written in logical order and its elements are
+          marked up in a meaningful way, it will be usable on the widest range
+          of browsing environments, including the oldest browsers, future
+          browsers, and mobile and assistive devices. It may not look exactly
+          the same, but the important thing is that your content is available.
+          It also ensures that
+          <a
+            href="https://www.google.com/search/howsearchworks/how-search-works/ranking-results/"
+            >search engines like Google</a
+          >
+          will catalog the content correctly. A clean HTML document with its
+          elements accurately and thoroughly described is the foundation for
+          accessibility.
+        </dd>
+
+        <dt>Styling strategy</dt>
+        <dd>
+          You can create layers of experience simply by taking advantage of the
+          way browsers parse style sheet rules. Without going into too much
+          technical detail, you can write a style rule that makes an element
+          background red, but also include a style that gives it a cool gradient
+          (a blend from one color to another) for browsers that know how to
+          render gradients. Or you can use a cutting-edge CSS selector to
+          deliver certain styles only to cutting-edge browsers. The knowledge
+          that browsers simply ignore properties and rules they don't understand
+          gives you license to innovate without bringing older browsers to their
+          knees. You just have to be mindful of styling the baseline experience
+          first, then adding improvements once the minimum requirements are met.
+        </dd>
+
+        <dt>Scripting strategy</dt>
+        <dd>
+          As with other web technologies, there are discrepancies in how
+          browsers handle JavaScript (particularly on non-desktop devices), and
+          some users opt to turn it off entirely. The first rule in progressive
+          enhancement is to make sure basic functionality—such as linking from
+          page to page or accomplishing essential tasks like data submission via
+          forms—is intact even when JavaScript is off. In this way, you ensure
+          the baseline experience, and enhance it when JavaScript is available.
+        </dd>
+      </dl>
+    </section>
+
+    <section id="examples">
+      <h2>Examples</h2>
+
+      <pre id="var_fallback"><code>:root {
+      --accent-color: #0061d1;
+  }
+
+  span.term {
+      color: cornflowerblue;
+      color: var(--accent-color);
+  }</code></pre>
+    </section>
+
+    <section id="for-further-reading">
+      <h2>For Further Reading</h2>
+      <ul>
+        <li>
+          There is no better introduction to the progressive enhancement
+          approach than the book
+          <span class="title">
+            Adaptive Web Design: Crafting Rich Experiences with Progressive
+            Enhancement </span
+          >, 2nd Edition, by Aaron Gustafson (New Riders).
+        </li>
+        <li>
+          <span class="title">
+            The Uncertain Web: Web Development in a Changing Landscape
+          </span>
+          by Rob Larson (O'Reilly).
+        </li>
+        <li>
+          Once you have more chops, the book
+          <span class="title">Designing with Progressive Enhancement</span> by
+          Todd Parker, Patty Toland, Scott Jehl, and Maggie Costello Wachs (New
+          Riders) is an excellent deep-dive into techniques and best practices.
+          Read more about it at
+          <a href="https://www.filamentgroup.com/dwpe/">
+            filamentgroup.com/dwpe/ </a
+          >.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Question 2 -->
+    <h1>Part A - Flexbox Navigation - Neema Kanyi</h1>
+
+    <section id="Q2PA">
+      <nav>
+        <a href="www.http://127.0.0.1:5500/index.html">Home</a>
+        <a href="#for-further-reading">Products</a>
+        <a href="https://developer.mozilla.org/en-US/docs">Services</a>
+        <a href="#stratagies">Strategies</a>
+      </nav>
+    </section>
+  </body>
+</html>
