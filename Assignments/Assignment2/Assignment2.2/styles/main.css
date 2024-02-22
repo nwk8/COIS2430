@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+}
+
+#flexbox {
+    display: flex;
+    justify-content: space-between;
+    width: 50em;
+    height: 50px;
+    border-style: none;
+    border-radius: 0.5em;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+nav div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+nav div:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+#flexbox .broomball {
+    color: white;
+}
+
+a:link 
+{
+color: #ccff66;;
+}
+a:visited {
+color: #ff6666;
+}
+a:hover {
+    color: pink;
+}
+
+#search {
+display: flex;
+align-items: flex-start;
+justify-content: space-around;
+position: absolute;
+    top: 6em;
+    right: 0;
+    width: 15em;
+    height: 2em;
+    border-style: none;
+    border-radius: 0.5em;
+  }
+
+  #search .searchicon {
+    color: white;
+}
+
+[type=text] {
+background-color: #2ec4b6;
+border-style: none;
+border-radius: 0.5em;
+margin-top: 1em;
+  }
+
+[type=submit] {
+background-color: white;
+border-style: none;
+border-radius: 0.5em;
+color:rebeccapurple;
+  }
