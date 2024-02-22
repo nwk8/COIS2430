@@ -1,23 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-nav a:link 
+#parta {
+    display: grid;
+    font-size: 150%;
+    background-color: rebeccapurple;
+}
+#parta a:link 
 {
 color: #ccff66;;
 }
-nav a:visited {
+#parta a:visited {
 color: #ff6666;
 }
-nav a:hover {
+#parta a:hover {
     color: pink;
 }
-a:link 
-{
-color: blue;
-}
-a:visited {
-color: dodgerblue;
-}
-a:hover {
-   color: darkblue;
-}
+#parta ul li::marker {
+    color: black;
+ }
 
+div.searchbutton {
+    position: absolute;
+    width: 10em;
+    height: 2em;
+    border-style: none;
+    border-radius: 0.5em;
+  }
+[type=text] {
+background-color: #2ec4b6;
+border-style: none;
+border-radius: 0.5em;
+margin-top: 1em;
+
+  }
+[type=submit] {
+background-color: white;
+border-radius: 0.5em;
+color:rebeccapurple;
+
+  }
+
+  #parta .broomball {
+    color:white;
+  }
+
+  #list.parta {
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+}

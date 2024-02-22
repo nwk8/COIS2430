@@ -5,7 +5,7 @@ Properties for every question
 **************************************/
 .grid {
     display: grid;
-    gap: 1em;
+    gap: 1em; 
 }
 
 /************************************
