@@ -8,8 +8,8 @@
 #flexbox {
     display: flex;
     justify-content: space-between;
-    width: 50em;
-    height: 50px;
+    width: 70em;
+    height: 90px;
     border-style: none;
     border-radius: 0.5em;
     align-items: center;
@@ -31,6 +31,7 @@ nav div:last-child {
 }
 
 #flexbox .broomball {
+    align-self: flex-end;
     color: white;
 }
 
