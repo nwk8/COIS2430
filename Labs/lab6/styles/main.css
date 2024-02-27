@@ -1,0 +1,88 @@
+@import url(reset.css);
+/******************
+Eggshell: #f4f1de
+Burnt Sienna : #e07a5f
+Delft Blue: #3d405b
+Cambridge Blue #81b29a
+Sunset: #f2cc8f
+******************/
+
+:root {
+  /** include the system-ui font family here **/
+
+  /* defining color properties */
+  --light-one: #f4f1de;
+  --light-two: #f2cc8f;
+  --dark-one: #3d405b;
+  --dark-two: #81b29a;
+  --dark-three: #e07a5f;
+}
+
+body {
+  /* make the body fill the viewport at minimum */
+  min-height: 100vh;
+
+  /** make the body a grid container here**/
+
+  /* defined the rows and columns for our layout grid  */
+  grid-template-columns: 1fr 15em; /*all the space, fixed*/
+  grid-template-rows: 9em 5em 1fr auto; /*fixed,fixed, all the space, based on content*/
+
+  /** define the necessary grid template areas for our layout **/
+}
+
+/*###############################################
+    Nav Section
+################################################*/
+nav {
+}
+
+nav ul {
+  height: 100%;
+}
+
+/* Add style rules (with selectors) for styling a and visited a in
+the nav here */
+
+/*###############################################
+    Header Section
+################################################*/
+
+header {
+}
+header h2 {
+}
+header p {
+}
+header img {
+  width: 5em;
+  filter: invert(94%) sepia(11%) saturate(3673%) hue-rotate(306deg)
+    brightness(123%) contrast(90%);
+}
+
+/*###############################################
+    Main Section
+################################################*/
+
+main {
+}
+
+/* Add style rules (with selectors) for styling the heading and paragraphs in main */
+
+/*###############################################
+   Footer Section
+################################################*/
+
+/* a more specific select for footer is necessary because
+ of the footer in the blockquote*/
+main + footer {
+}
+
+/*###############################################
+    Aside Section
+################################################*/
+
+aside {
+}
+
+/**  All other styles for the sidebar here   **/
