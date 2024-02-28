@@ -82,7 +82,7 @@ body {
 .signup {
     position: relative;
     left: 17em;
-    top: -1.5em;
+    top: 1.5em;
     font-weight: 400;
     font-size: 0.5em;
     color: black;
@@ -156,7 +156,7 @@ a:hover {
 .forgot
 {
  position: absolute;
-    top: 40.5em;
+    top: 45em;
     left: 88em;
     font-size: 0.75em;
     font-weight: 300;
@@ -166,7 +166,7 @@ a:hover {
 .navbar .button {
     position: absolute;
     width: 25em;
-    bottom: 23em;
+    bottom: 21em;
     height: 3em;
     color: white;
     font-size: 1em;
