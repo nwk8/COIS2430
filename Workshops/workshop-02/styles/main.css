@@ -29,13 +29,14 @@ h1 {
     font-size: 4em;
     font-weight: 900;
     text-shadow: 0.02em 0.04em #403D58;
-    color: midnightblue;
+    color: deeppink;
 }
 
 h2 {
     border-bottom: 0.1em solid #66D7D1;
-    padding: 0.25em;
+    padding: 0.75em;
     margin: 1.6em 0;
+    text-shadow: 0.02em 0.04em deeppink;
 }
 
 section p {
