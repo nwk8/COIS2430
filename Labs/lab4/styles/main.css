@@ -2,8 +2,10 @@
 
 /************************************
 Container properties for every question
-**************************************/
+**************************************/ 
 .container {
+  display: flex;
+
 }
 
 /************************************
@@ -11,6 +13,8 @@ Properties for Direction Section
 **************************************/
 
 #parta.container {
+  flex-direction: row-reverse;
+
 }
 
 #partb.container {
@@ -24,6 +28,9 @@ Properties for Main Axis Alignment
 **************************************/
 
 #partd.container {
+  flex-direction: column-reverse;
+  justify-content: center;
+   
 }
 
 #parte.container {

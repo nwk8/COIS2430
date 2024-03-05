@@ -1,14 +1,14 @@
 # COIS 2430H Assignment 2
 
 ### Question 1
-![Assignment 2 Question 1](Assignment2.1/A2q1.png)
+![Assignment 2 Question 1](Assignment2.1/img/A2q1.png)
 
 
 #### Question Two - Part A UnStyled
-![Assignment 2 Part A](Assignment2.1/A2PA.png)
+![Assignment 2 Part A](Assignment2.1/img/A2PA.png)
 
 ### Question Two Part A Styled
-![Assignment 2 Part B](Assignment2.2/A2PA2.png)
+![Assignment 2 Part B](Assignment2.2/img/A2PA2.png)
 
 ### Code 
 ``` html 
@@ -145,10 +145,10 @@ color:rebeccapurple;
   }
 ```
 ### Question 2 Part B - Unstyled
-![Assignment 2 Part B](Assignment2.3/A2PA.png)
+![Assignment 2 Part B](Assignment2.3/img/A2PA.png)
 
 ### Question 2 Part B - Styled
-![Assignment 2 Part B](Assignment2.3/A2PB.png)
+![Assignment 2 Part B](Assignment2.3/img/A2PB.png)
 
 ### Code
 ```html

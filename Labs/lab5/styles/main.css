@@ -23,7 +23,7 @@ A simple grid with equally spaced columns
 Different Column Sizes
 **************************************/
 #partb.grid {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 /************************************
 Positing with Line Numbers
@@ -92,10 +92,6 @@ Aligned content in grid cells
 #partg.grid {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
-    
-    
-    
-
 }
 
 #partg .item{
