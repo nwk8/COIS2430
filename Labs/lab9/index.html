@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 9 Starting Document</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script defer src="./scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>COIS 2430: Lab Nine</h1>
+      </hgroup>
+    </header>
+    <main>
+      <h2>Contest Entry Form</h2>
+      <form method="get" action="thanks.html">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <span class="error hidden">You must enter a valid email</span>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <span class="error hidden">You're password is not strong enough</span>
+        </div>
+        <div>
+          <label for="answer">What is a book you love?</label>
+          <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
+          <span class="count-status">100 characters left.</span>
+        </div>
+        <div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">
+            I agree to the
+            <a href="terms.html">I agree to the terms and conditions</a>
+          </label>
+          <span class="error hidden"
+            >You must agree to the terms and conditions</span
+          >
+        </div>
+        <div><button type="submit">Enter Contest</button></div>
+      </form>
+    </main>
+  </body>
+</html>
