@@ -1,0 +1,129 @@
+/* Includes Noto Color Emoji as a fallback */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+    /* The emojis should display as emoji on all platforms by default, but just in case... */
+    font-family: system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Segoe UI Symbol', emoji, sans-serif;
+}
+
+body {
+    max-width: 50rem;
+    margin: auto;
+    padding: 0 2em 5em;
+}
+
+section {
+    margin: 3em 0;
+}
+
+pre, code, samp, kbd {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.emoji-list {
+    --cols: 3;
+
+    list-style: none;
+    padding: initial;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 1.5em;
+
+    padding: 1.15em;
+    background-color: hsl(0, 0%, 82%);
+    border-radius: 0.5em;
+
+    /* Remove side-margins from last time now that there's a background; shrink
+     * vertical margins a bit to make up for the padding. */
+    margin: 0.85em 0;
+}
+
+.emoji, button {
+    /* Bit smaller than last time, but still pretty big */
+    font-size: 2em;
+
+    box-sizing: content-box;
+    width: 1.375em;             /* 5.5rem */
+    height: 1.375em;            /* 5.5rem */
+    padding: 0.375em;           /* 1.5rem */
+    border-radius: 0.1875em;    /* .75rem */
+
+    border: 0.0625em solid;
+    border-color: transparent;
+
+    text-align: center;
+    vertical-align: bottom;
+
+    background-image: radial-gradient(40% 12.5% ellipse at center 80%, rgb(0 0 0 / .2), transparent);
+    box-shadow: 0 0.1em 0.25em -0.1em rgb(0 0 0 / .5);
+
+    margin: initial;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    /* Bezier values from https://www.joshwcomeau.com/animation/3d-button/ */
+    transition: transform 150ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.emoji.full-width {
+    width: max-content;
+}
+
+.emoji:is(:hover, :focus-visible), button:is(:hover, :focus-visible) {
+    transition: transform 150ms cubic-bezier(.3, .7, .4, 1.5);
+    transform: translateY(max(-1.5%, -0.1rem));
+}
+
+.emoji:active,
+button:active {
+    /* 60fps = ~16.67ms per frame; 34ms = 2 frames @ 60Hz */
+    transition: transform 34ms;
+    transform: translateY(min(2%, 0.2rem));
+}
+
+button {
+    cursor: pointer;
+
+    /* Inherit font from parent (including size); reset size; remove shadow */
+    font: inherit;
+    width: unset;
+    height: unset;
+    background-image: none;
+
+    color: white;
+    font-weight: 500;
+    background-color: hsl(204, 56%, 32%);
+    padding: 0.5em 0.65em;
+
+    /* Right-align them */
+    display: block;
+    margin-left: auto;
+}
+
+/* For inline ones: */
+span.emoji {
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-block: 0.2em;
+    margin-inline: 0.1em;
+}
+
+/* Coloring: */
+
+.emoji {
+    /* default, emojis with no special properties */
+    background-color: hsl(204, 77%, 69%);
+}
+
+.emoji.clone {
+    background-color: hsl(120, 77%, 69%);
+}
+
+.emoji.remove {
+    background-color: hsl(0, 77%, 69%);
+}
