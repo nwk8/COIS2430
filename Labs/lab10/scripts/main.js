@@ -1,4 +1,3 @@
-
 // =================================================================================================
 // Scroll to the bottom of the file to add your own code for this lab.
 // =================================================================================================
@@ -13,36 +12,36 @@
  * @see {@link getRandomEmoji}
  */
 const emojiList = [
-    { emoji: '🦈', category: 'animal', name: 'shark' },
-    { emoji: '🦔', category: 'animal', name: 'hedgehog' },
-    { emoji: '🐐', category: 'animal', name: 'goat' },
-    { emoji: '🐄', category: 'animal', name: 'cow' },
-    { emoji: '🔥', category: 'nature', name: 'fire' },
-    { emoji: '💄', category: 'object', name: 'lipstick' },
-    { emoji: '⚽', category: 'object', name: 'soccer-ball' },
-    { emoji: '🌯', category: 'food', name: 'burrito' },
-    { emoji: '✨', category: 'nature', name: 'sparkles' },
-    { emoji: '🦞', category: 'animal', name: 'lobster' },
-    { emoji: '🛁', category: 'object', name: 'bathtub' },
-    { emoji: '🌈', category: 'nature', name: 'rainbow' },
-    { emoji: '🌊', category: 'nature', name: 'water-wave' },
-    { emoji: '👁', category: 'person', name: 'eye' },
-    { emoji: '👀', category: 'person', name: 'eyes' },
-    { emoji: '🦀', category: 'animal', name: 'crab' },
-    { emoji: '🤩', category: 'smiley', name: 'star-struck' },
-    { emoji: '🥰', category: 'smiley', name: 'smiling-face-with-hearts' },
-    { emoji: '👄', category: 'person', name: 'mouth' },
-    { emoji: '🦅', category: 'animal', name: 'eagle' },
-    { emoji: '🌠', category: 'nature', name: 'shooting-star' },
-    { emoji: '🪑', category: 'object', name: 'chair' },
-    { emoji: '🛏', category: 'object', name: 'bed' },
-    { emoji: '🐖', category: 'animal', name: 'pig' },
-    { emoji: '🎨', category: 'object', name: 'artist-palette' },
-    { emoji: '🍟', category: 'food', name: 'french-fries' },
-    { emoji: '😂', category: 'smiley', name: 'face-with-tears-of-joy' },
-    { emoji: '🛋', category: 'object', name: 'couch-and-lamp' },
-    { emoji: '😎', category: 'smiley', name: 'smiling-face-with-sunglasses' },
-    { emoji: '🦆', category: 'animal', name: 'duck' },
+  { emoji: "🦈", category: "animal", name: "shark" },
+  { emoji: "🦔", category: "animal", name: "hedgehog" },
+  { emoji: "🐐", category: "animal", name: "goat" },
+  { emoji: "🐄", category: "animal", name: "cow" },
+  { emoji: "🔥", category: "nature", name: "fire" },
+  { emoji: "💄", category: "object", name: "lipstick" },
+  { emoji: "⚽", category: "object", name: "soccer-ball" },
+  { emoji: "🌯", category: "food", name: "burrito" },
+  { emoji: "✨", category: "nature", name: "sparkles" },
+  { emoji: "🦞", category: "animal", name: "lobster" },
+  { emoji: "🛁", category: "object", name: "bathtub" },
+  { emoji: "🌈", category: "nature", name: "rainbow" },
+  { emoji: "🌊", category: "nature", name: "water-wave" },
+  { emoji: "👁", category: "person", name: "eye" },
+  { emoji: "👀", category: "person", name: "eyes" },
+  { emoji: "🦀", category: "animal", name: "crab" },
+  { emoji: "🤩", category: "smiley", name: "star-struck" },
+  { emoji: "🥰", category: "smiley", name: "smiling-face-with-hearts" },
+  { emoji: "👄", category: "person", name: "mouth" },
+  { emoji: "🦅", category: "animal", name: "eagle" },
+  { emoji: "🌠", category: "nature", name: "shooting-star" },
+  { emoji: "🪑", category: "object", name: "chair" },
+  { emoji: "🛏", category: "object", name: "bed" },
+  { emoji: "🐖", category: "animal", name: "pig" },
+  { emoji: "🎨", category: "object", name: "artist-palette" },
+  { emoji: "🍟", category: "food", name: "french-fries" },
+  { emoji: "😂", category: "smiley", name: "face-with-tears-of-joy" },
+  { emoji: "🛋", category: "object", name: "couch-and-lamp" },
+  { emoji: "😎", category: "smiley", name: "smiling-face-with-sunglasses" },
+  { emoji: "🦆", category: "animal", name: "duck" },
 ];
 
 /**
@@ -60,17 +59,18 @@ const emojiList = [
  * @see {@link emojiList}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#object_destructuring}
  */
-const getRandomEmoji = () => emojiList[Math.floor(Math.random() * emojiList.length)];
+const getRandomEmoji = () =>
+  emojiList[Math.floor(Math.random() * emojiList.length)];
 
 // =================================================================================================
 
-const button1 = document.querySelector('#part-1 button');
-const button2 = document.querySelector('#part-2 button');
+const button1 = document.querySelector("#part-1 button");
+const button2 = document.querySelector("#part-2 button");
 
-const list1CloneItems = document.querySelectorAll('#part-1 .clone');
-const list1RemoveItems = document.querySelectorAll('#part-1 .remove');
+const list1CloneItems = document.querySelectorAll("#part-1 .clone");
+const list1RemoveItems = document.querySelectorAll("#part-1 .remove");
 
-const list2 = document.querySelector('#part-2 ul');
+const list2 = document.querySelector("#part-2 ul");
 
 // =================================================================================================
 
@@ -81,9 +81,32 @@ const list2 = document.querySelector('#part-2 ul');
  * @param {MouseEvent} event
  */
 function appendToSibling(event) {
-    // Complete the function
+  // Complete the function
+  //func: random emoji
+  function getRandomEmoji() {
+    const randomIndex = Math.floor(Math.random() * emojis.length);
+    return emojis[randomIndex];
+  }
+  //testing
+  const { emoji, category } = getRandomEmoji();
+  //destructuring
+  console.log("Emoji:", emoji);
+  console.log("Category:", category);
 }
-
+//creates new list element using createElement
+const newListItem = document.createElement("li");
+newListItem.textContent = "New List Item";
+// using classList to add emoji to new element
+newListItem.classList.add("emoji");
+const myList = document.getElementById("myList");
+myList.appendChild(newListItem);
+newListItem.textContent = emoji;
+// adding emoji value and changing it to text element
+newListItem.classList.add("emoji", category.toLowerCase());
+//using traversal, finding list element and inserting list element
+// into last child.
+const button = document.getElementById("yourButton");
+const listElement = button.parentElement.querySelector("ul");
 // Add event listener here
 
 // --------------------------------------------------
@@ -91,7 +114,6 @@ function appendToSibling(event) {
 // Part 1.2
 
 // Loop to add the required event listener to each selected 'clone' item
-
 
 // Loop to add the required event listener to each selected 'remove' item
 
@@ -104,15 +126,13 @@ function appendToSibling(event) {
  * @param {MouseEvent} event
  */
 function appendRandomToSibling(event) {
-   // Complete function 
+  // Complete function
 }
 
 // Add event listener here
-
 
 // --------------------------------------------------
 
 // Part 2.2
 
 // Add event listener here
-
